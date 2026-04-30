@@ -48,7 +48,7 @@ In this lab, I built a Windows Active Directory environment using VirtualBox. Th
   * IP: 172.16.0.1
   * Subnet: 255.255.255.0
   * DNS: 127.0.0.1
-
+![alt text](https://github.com/IT-bash/lab-pictures/blob/main/assing%20static%20IP.png)
 Active Directory depends on DNS, so the Domain Controller acts as the DNS server.
 
 
@@ -60,6 +60,9 @@ Active Directory depends on DNS, so the Domain Controller acts as the DNS server
 * Install AD DS
 * Promote to Domain Controller
 * Create domain: `mydomain.com`
+![alt text](https://github.com/IT-bash/lab-pictures/blob/main/AD%20DS.png)
+![alt text](https://github.com/IT-bash/lab-pictures/blob/main/Domain%20controller.png)
+![alt text](https://github.com/IT-bash/lab-pictures/blob/main/create%20domain.png)
 
 
 ---
@@ -69,6 +72,8 @@ Active Directory depends on DNS, so the Domain Controller acts as the DNS server
 * Open Active Directory Users and Computers
 * Create Organizational Unit (OU)
 * Create user and add to **Domain Admins**
+![alt text](https://github.com/IT-bash/lab-pictures/blob/main/creating%20OU.png)
+![alt text](https://github.com/IT-bash/lab-pictures/blob/main/domain%20admins.png)
 
 
 ---
@@ -80,6 +85,9 @@ Active Directory depends on DNS, so the Domain Controller acts as the DNS server
 * Configure NAT using Internet adapter
 
 NAT allows private network (172.16.x.x) to access the internet.
+
+![alt text](https://github.com/IT-bash/lab-pictures/blob/main/remote%20access.png)
+![alt text](https://github.com/IT-bash/lab-pictures/blob/main/Enable%20routing%20and%20rmote%20access.png)
 
 
 
@@ -96,6 +104,8 @@ NAT allows private network (172.16.x.x) to access the internet.
 
 DHCP automatically assigns IP, gateway, and DNS.
 
+![alt text](https://github.com/IT-bash/lab-pictures/blob/main/DHCP.png)
+
 
 ---
 
@@ -110,6 +120,8 @@ Set-ExecutionPolicy Unrestricted
 
 * Execute script
 
+![alt text](https://github.com/IT-bash/lab-pictures/blob/main/scrip.png)
+
 
 ---
 
@@ -119,6 +131,8 @@ Set-ExecutionPolicy Unrestricted
 * Use Internal Network
 * Install OS
 
+![alt text](https://github.com/IT-bash/lab-pictures/blob/main/client%20setup.png)
+
 
 ---
 
@@ -127,6 +141,10 @@ Set-ExecutionPolicy Unrestricted
 * Rename PC
 * Join domain: `mydomain.com`
 * Restart and log in with domain user
+  
+![alt text](https://github.com/IT-bash/lab-pictures/blob/main/join%20domain.png)
+![alt text](https://github.com/IT-bash/lab-pictures/blob/main/log%20in.png)
+
 
 
 ---
@@ -136,6 +154,8 @@ Verify:
 * Client receives DHCP IP
 * Client appears in Active Directory
 * Internet connectivity works
+![alt text](https://github.com/IT-bash/lab-pictures/blob/main/ping%20IP.png)
+![alt text](https://github.com/IT-bash/lab-pictures/blob/main/Screenshot%202026-04-30%20013624.png)
 
 ---
 
